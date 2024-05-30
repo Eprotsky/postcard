@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-3">Капча не пройдена</h1>
+    <a href="{{ url_for('feedback') }}" class="btn btn-primary mt-3">Попробовать еще раз</a>
+</div>
+{% endblock %}

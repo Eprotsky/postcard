@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="fs-4">{{ title }}</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="{{ url_for('index') }}" class="nav-link text-white" aria-current="page">
+                Домашняя страница
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('examples') }}" class="nav-link text-white">
+                Примеры работ
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('feedback') }}" class="nav-link text-white">
+                Обратная связь
+            </a>
+        </li>
+    </ul>
+    <hr>
+</div>
+
+<div class="content container">
+    <h1 class="hexamples gradient-text">Здесь Вы можете ознакомиться с примерами работ</h1>
+    <a href="https://klu.so/?ref=landingfolio"><img class="example1"
+                                                    src="{{ url_for('static', filename='img/example1.png') }}"
+                                                    alt="example1"></a>
+    <a href="https://www.kloudmate.com/?ref=landingfolio"><img class="example2"
+                                                               src="{{ url_for('static', filename='img/example2.png') }}"
+                                                               alt="example1"></a>
+    <a href="https://www.about.pangea.app/?ref=landingfolio"><img class="example3"
+                                                                  src="{{ url_for('static', filename='img/example3.png') }}"
+                                                                  alt="example1"></a>
+    <a href="https://specifyapp.com/?ref=landingfolio"><img class="example4"
+                                                            src="{{ url_for('static', filename='img/example4.png') }}"
+                                                            alt="example1"></a>
+    <a href="https://vsk.design/?ref=landingfolio"><img class="example5"
+                                                        src="{{ url_for('static', filename='img/example5.png') }}"
+                                                        alt="example1"></a>
+    <a href="https://www.enterpret.com/?ref=landingfolio"><img class="example6"
+                                                               src="{{ url_for('static', filename='img/example6.png') }}"
+                                                               alt="example1"></a>
+    <a href="https://joincobalt.com/?ref=landingfolio"><img class="example7"
+                                                            src="{{ url_for('static', filename='img/example7.png') }}"
+                                                            alt="example1"></a>
+    <a href="https://wope.com/?ref=landingfolio"><img class="example8"
+                                                      src="{{ url_for('static', filename='img/example8.png') }}"
+                                                      alt="example1"></a>
+    <a href="https://rive.app/?ref=landingfolio"><img class="example9"
+                                                      src="{{ url_for('static', filename='img/example9.png') }}"
+                                                      alt="example1"></a>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+8Xkk/oE9tCT3yyiP68cVfMf3LGY"
+        crossorigin="anonymous"></script>
+</body>
+</html>
